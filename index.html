@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+    <title>Frontend Mentor | Results summary component</title>
+
+    <style>
+      body{margin: 0;padding: 0;}
+      main{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        
+      }
+      .result{
+        background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+        text-align: center;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+      .result h1, div{
+        color: hsl(241, 100%, 89%);
+      }
+      .result div{
+        border: 0 solid;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+        font-size: 14px;
+      }
+      .result div span{
+        font-size: 40px;
+        color: hsl(0,0%,100%);
+        margin: 5px;
+        font-weight: bold;
+      }
+      #rating h2{
+        color: hsl(0,0%,100%);
+      }
+      #rating p{
+        color: hsl(241, 100%, 89%);
+      }
+      .summary{
+        display: flex;
+        flex-direction: column;
+      }
+      .summary h3{
+        margin-left: 30px;
+      }
+      .summary div{
+        border: 0 solid;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 10px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .summary #Reaction{
+        background-color: hsl(0, 100%, 97%);
+      }
+      .summary #Memory{
+        background-color: hsl(39, 84%, 93%);
+      }
+      .summary #Verbal{
+        background-color: hsl(165, 100%, 94%);
+      }
+      .summary #Visual{
+        background-color: hsl(235, 85%, 95%);
+      }
+      .summary div img{
+        margin-right: -50px;
+      }
+      .summary div #reaction{
+        color: hsl(0, 100%, 67%);
+      }
+      .summary div #memory{
+        color: hsl(39, 100%, 56%);
+      }
+      .summary div #verbal{
+        color: hsl(166, 100%, 37%);
+      }
+      .summary div #visual{
+        color: hsl(234, 85%, 45%);
+      }
+      .summary div span strong{
+        color: hsl(224, 30%, 27%);
+        padding: 3px;
+      }
+      .summary button{
+        align-self: center;
+        padding: 15px 100px;
+        border: 0 solid;
+        border-radius: 20px;
+        color: hsl(0,0%,100%);
+        background-color: hsl(224, 30%, 27%);
+      }
+      .summary button:active{
+        background-color: hsl(241, 81%, 54%);
+      }
+      
+
+      @media screen and (min-width: 600px){
+        body{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        main{
+          height: 100vh;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          
+          padding: 20px
+        }
+        main section{
+          height: fit-content;
+        }
+        .result{
+          flex-shrink: 0;
+          border-radius: 30px;
+          padding: 50px 20px;
+        }
+        .summary{
+          flex-shrink: 1;
+          border: 0 solid;
+          box-shadow: 10px 10px 5px hsl(162, 62%, 96%);
+          padding: 10px;
+          border-bottom-right-radius: 20px;
+        }
+        
+      }
+
+    
+      footer{ font-size: 11px; text-align: center; }
+      footer a{ color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
+  <body>
+
+    <main>
+      <section class="result">
+        <h1>Your Result</h1>
+        <div><span id="scoreamt">76 <br></span>of 100</div>
+        <span id="rating">
+          <h2>Great</h2>
+          <p>You scored higher than 65% of the <br>people who have taken these tests.</p>
+        </span>
+      </section>
+
+      <section class="summary">
+        <h3>Summary</h3>
+        <div id="Reaction">
+          <img src="./assets/images/icon-reaction.svg" alt="reaction icon"> 
+          <span id="reaction">Reaction </span> 
+          <span><strong>80</strong>/100</span>
+        </div>
+        <div id="Memory">
+          <img src="./assets/images/icon-memory.svg" alt="memory icon"> 
+          <span id="memory">Memory </span> 
+          <span><strong>92</strong>/100</span>
+        </div>
+        <div id="Verbal">
+          <img src="./assets/images/icon-verbal.svg" alt="verbal icon"> 
+          <span id="verbal">Verbal </span> 
+          <span><strong>61</strong>/100</span>
+        </div>
+        <div id="Visual">
+          <img src="./assets/images/icon-visual.svg" alt="visual icon"> 
+          <span id="visual">Visual </span> 
+          <span><strong>72</strong>/100</span>
+        </div>
+        <button>Continue</button>
+      </section>
+    
+    </main>
+
+    
+  
+    <!--
+    <footer>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Mustapha Alhassan</a>.
+    </footer>
+    -->
+  </body>
+</html>
