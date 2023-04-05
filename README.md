@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/results-summary-component-OyjD3RIojQ)
 - Live Site URL: [Add live site URL here](https://mustapha62996.github.io/Result-Summary-Component/)
 
 
