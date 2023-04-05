@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/results-summary-component-OyjD3RIojQ)
-- Live Site URL: [Add live site URL here](https://mustapha62996.github.io/Result-Summary-Component/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/results-summary-component-OyjD3RIojQ)
+- Live Site URL: [Live site URL](https://mustapha62996.github.io/Result-Summary-Component/)
 
 
 ### Built with
