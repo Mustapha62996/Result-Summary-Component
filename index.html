@@ -11,11 +11,26 @@
     <style>
       body{margin: 0;padding: 0;}
       main{
-        margin: 0;
+        
         display: flex;
         flex-direction: column;
         
       }
+
+      /* --------------------Fonts-------------------- */
+      @font-face {
+        font-family: HankenGrotesk-Bold;
+        src: url(./assets/fonts/static/HankenGrotesk-Bold.ttf);
+      }
+      @font-face {
+        font-family: HankenGrotesk-VariableFont_wght;
+        src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+      }
+      @font-face {
+        font-family: HankenGrotesk-Medium;
+        src: url(./assets/fonts/static/HankenGrotesk-Medium.ttf);
+      }
+
       .result{
         background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
         text-align: center;
@@ -24,6 +39,10 @@
       }
       .result h1, div{
         color: hsl(241, 100%, 89%);
+      }
+      .result h1{
+        font-family: HankenGrotesk-Bold;
+        font-size: 18px;
       }
       .result div{
         border: 0 solid;
@@ -36,26 +55,39 @@
         justify-content: center;
         align-items: center;
         background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
-        font-size: 14px;
+        font-family: HankenGrotesk-VariableFont_wght;
+        font-size: 12px;
+
       }
+     
       .result div span{
-        font-size: 40px;
+        font-family: HankenGrotesk-Bold;
+        font-size: 36px;
         color: hsl(0,0%,100%);
         margin: 5px;
         font-weight: bold;
       }
       #rating h2{
         color: hsl(0,0%,100%);
+        font-family: HankenGrotesk-Bold;
+        font-size: 24px;
       }
       #rating p{
         color: hsl(241, 100%, 89%);
+        font-family: HankenGrotesk-Medium;
+        font-size: 12px;
+        padding-bottom: 10px;
       }
+
+
       .summary{
         display: flex;
         flex-direction: column;
       }
       .summary h3{
         margin-left: 30px;
+        font-family: HankenGrotesk-Bold;
+        font-size: 18px;
       }
       .summary div{
         border: 0 solid;
@@ -65,6 +97,8 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        font-family: HankenGrotesk-Bold;
+        font-size: 16px;
       }
       .summary #Reaction{
         background-color: hsl(0, 100%, 97%);
@@ -79,7 +113,7 @@
         background-color: hsl(235, 85%, 95%);
       }
       .summary div img{
-        margin-right: -50px;
+        margin: 0;
       }
       .summary div #reaction{
         color: hsl(0, 100%, 67%);
@@ -105,14 +139,16 @@
         color: hsl(0,0%,100%);
         background-color: hsl(224, 30%, 27%);
       }
-      .summary button:active{
+      .summary button:hover{
         background-color: hsl(241, 81%, 54%);
       }
       
 
+      /*--------Media Queries for width 600px and above---------*/
       @media screen and (min-width: 600px){
         body{
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
         }
@@ -122,8 +158,7 @@
           flex-direction: row;
           justify-content: center;
           align-items: center;
-          
-          padding: 20px
+          padding: 20px;
         }
         main section{
           height: fit-content;
@@ -143,9 +178,6 @@
         
       }
 
-    
-      footer{ font-size: 11px; text-align: center; }
-      footer a{ color: hsl(228, 45%, 44%); }
     </style>
   </head>
   <body>
@@ -187,13 +219,5 @@
     
     </main>
 
-    
-  
-    <!--
-    <footer>
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Mustapha Alhassan</a>.
-    </footer>
-    -->
   </body>
 </html>
